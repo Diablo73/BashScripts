@@ -19,3 +19,8 @@
 	unzip root.zip  
 	tar -xvf root.tar.xz  
 	./dist/proot -S . /bin/bash
+
+## Install text-based web browser in shell
+
+	install-pkg w3m
+	w3m http://127.0.0.1:8080
