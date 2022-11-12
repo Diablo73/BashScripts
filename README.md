@@ -1,26 +1,10 @@
-# Shell-Commands-repl.it
+# Git-Commands
 
-## Install cURL in shell
+## Get the commit count across all branches
+	git rev-list --all --count
 
-	apt-get update
-	apt install curl
-	curl --version
+## Get the number of commits grouped by contributors
+	git shortlog -s
 
-## Install sudo in shell
-
-	apt-get update
-	apt-get install sudo
-	sudo --version
-
-## Become a root user in shell
-
-	wget https://cdn.discordapp.com/attachments/853535040250970113/878590395611775016/yt.zip  
-	unzip yt.zip  
-	unzip root.zip  
-	tar -xvf root.tar.xz  
-	./dist/proot -S . /bin/bash
-
-## Install text-based web browser in shell
-
-	install-pkg w3m
-	w3m http://127.0.0.1:8080
+## Concise form of git log
+	git reflog
