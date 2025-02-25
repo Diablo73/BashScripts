@@ -1,3 +1,20 @@
+# Auto Google Meet Droper
+
+Apply this script in the console
+```javascript
+setInterval(() => {
+	const threshold = 1;
+	const currentParticipantCount = document.querySelector('[aria-label*="People"]')
+									.parentElement.parentElement
+									.childNodes[1].childNodes[0]
+									.textContent - 0;
+	console.log(currentParticipantCount);
+	if (currentParticipantCount <= threshold) {
+		location.reload();
+	}
+}, 5000);
+```
+
 # Job Apply Scripts
 
 ## Instahyre
