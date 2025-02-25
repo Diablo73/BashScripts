@@ -11,6 +11,7 @@ setInterval(() => {
 	console.log(currentParticipantCount);
 	if (currentParticipantCount <= threshold) {
 		location.reload();
+		// document.querySelector('[aria-label*="Leave call"]').click();
 	}
 }, 5000);
 ```
